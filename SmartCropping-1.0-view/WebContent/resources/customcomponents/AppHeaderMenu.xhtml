@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html 
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:cc="http://java.sun.com/jsf/composite">
+
+	<!-- This must have at least one attribute -->
+	<cc:interface>	
+		<cc:attribute name="dummy" default="" type="java.lang.String" shortDescription="Dummy attribute."/>
+	</cc:interface>
+
+	<cc:implementation>
+		<p:menubar style="height:2em;" autoDisplay="false">
+			<p:submenu label="#{label['app.menu.apos']}" icon="ui-icon-clipboard">
+	            <p:menuitem value="#{label['app.menu.apos.dataExport']}" url="/private/web/DisplayExportData.jsf" icon="ui-icon-search" />
+	            <p:menuitem value="#{label['app.menu.apos.monitor']}" url="/private/web/MonitorFlights.jsf" icon="ui-icon-search" />
+	            <p:menuitem value="#{label['app.menu.apos.search.specific.flight']}" url="/private/web/SearchSpecificFlight.jsf" icon="ui-icon-search" />
+	            <p:menuitem value="#{label['app.menu.apos.search.diary.punctuality.mobile']}" url="/private/web/DailyPunctuality.jsf" icon="ui-icon-search" />
+	            <p:menuitem value="#{label['app.menu.apos.daily.punctuality']}" url="/private/web/HemDailyPunctuality.jsf" icon="ui-icon-circle-check" /> 	
+	            <p:menuitem value="#{label['app.menu.apos.monthly.punctuality']}" url="/private/web/HemMonthlyPunctuality.jsf" icon="ui-icon-circle-check" />
+	            <p:menuitem value="#{label['app.menu.apos.search.specific.semaphore']}" url="/private/web/MantenedorSemaforos.jsf" icon="ui-icon-search" />	  	            
+        	</p:submenu>
+		</p:menubar>
+	</cc:implementation>
+</html>

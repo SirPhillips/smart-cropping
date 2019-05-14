@@ -1,0 +1,6 @@
+Manifest-Version: 1.0
+Class-Path: 
+
+Name: SmartCropping-AppData
+Implementation-Title: SmartCropping-1.0
+Implementation-Version: Development-SmartCropping-1.0

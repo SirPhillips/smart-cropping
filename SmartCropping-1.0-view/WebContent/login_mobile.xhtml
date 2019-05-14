@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<f:view xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:pm="http://primefaces.org/mobile" contentType="text/html">
+	<pm:page
+		title="Smart Cropping Systems">
+		<pm:view id="usrLoginID">
+			<pm:header title="Smart Cropping" style="color:#ffffff;background:#1e2458;" />
+			<pm:content>
+				<h:form>
+					<p:inputText value="#{loginMobile.userName}"></p:inputText>
+					<p:password value="#{loginMobile.password}"></p:password>
+					<p:commandButton value="#{label['login.submit']}"
+						action="#{loginMobile.doLogin}"/>
+				</h:form>
+			</pm:content>
+		</pm:view>
+
+	</pm:page>
+</f:view>
