@@ -2,9 +2,6 @@ SmartCropping-1.0
 Sistema que facilitará tareas diaras de agricultores.
 
 Comenzando 🚀
-Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas.
-
-Mira Deployment para conocer como desplegar el proyecto.
 
 Pre-requisitos 📋
 eclipse IDE (Preferencia)
